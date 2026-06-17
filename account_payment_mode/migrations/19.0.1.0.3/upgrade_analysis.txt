@@ -1,0 +1,33 @@
+---Models in module 'account_payment_mode'---
+---Fields in module 'account_payment_mode'---
+account_payment_mode / account.bank.statement.line / bank_account_required (boolean): previously in module account_payment_partner
+account_payment_mode / account.bank.statement.line / has_reconciled_items (boolean): previously in module account_payment_partner
+account_payment_mode / account.bank.statement.line / partner_bank_filter_type_domain (many2one): previously in module account_payment_partner
+account_payment_mode / account.bank.statement.line / payment_mode_filter_type_domain (char): previously in module account_payment_partner
+account_payment_mode / account.bank.statement.line / payment_mode_id (many2one)    : previously in module account_payment_partner
+account_payment_mode / account.move             / bank_account_required (boolean): previously in module account_payment_partner
+account_payment_mode / account.move             / has_reconciled_items (boolean): previously in module account_payment_partner
+account_payment_mode / account.move             / partner_bank_filter_type_domain (many2one): previously in module account_payment_partner
+account_payment_mode / account.move             / payment_mode_filter_type_domain (char): previously in module account_payment_partner
+account_payment_mode / account.move             / payment_mode_id (many2one)    : previously in module account_payment_partner
+account_payment_mode / account.move.line        / payment_mode_id (many2one)    : previously in module account_payment_partner
+account_payment_mode / account.payment.mode     / refund_payment_mode_id (many2one): previously in module account_payment_partner
+account_payment_mode / account.payment.mode     / show_bank_account (selection) : previously in module account_payment_partner
+account_payment_mode / account.payment.mode     / show_bank_account_chars (integer): previously in module account_payment_partner
+account_payment_mode / account.payment.mode     / show_bank_account_from_journal (boolean): previously in module account_payment_partner
+account_payment_mode / res.brand                / customer_payment_mode_id (many2one): previously in module account_payment_partner
+account_payment_mode / res.brand                / supplier_payment_mode_id (many2one): previously in module account_payment_partner
+account_payment_mode / res.partner              / customer_payment_mode_id (many2one): previously in module account_payment_partner
+account_payment_mode / res.partner              / supplier_payment_mode_id (many2one): previously in module account_payment_partner
+account_payment_mode / res.users                / customer_payment_mode_id (many2one): previously in module account_payment_partner
+account_payment_mode / res.users                / supplier_payment_mode_id (many2one): previously in module account_payment_partner
+---XML records in module 'account_payment_mode'---
+NEW ir.ui.view: account_payment_mode.report_invoice_payment_mode
+NEW ir.ui.view: account_payment_mode.view_account_invoice_filter
+NEW ir.ui.view: account_payment_mode.view_account_invoice_report_search (noupdate)
+NEW ir.ui.view: account_payment_mode.view_invoice_tree
+NEW ir.ui.view: account_payment_mode.view_move_form
+NEW ir.ui.view: account_payment_mode.view_move_line_form
+NEW ir.ui.view: account_payment_mode.view_move_line_tree
+NEW ir.ui.view: account_payment_mode.view_partner_property_form
+NEW res.groups: account_payment_mode.group_show_account_payment_method [renamed from account_payment_partner module] (noupdate)
