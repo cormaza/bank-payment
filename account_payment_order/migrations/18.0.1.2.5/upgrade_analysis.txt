@@ -1,0 +1,7 @@
+---Models in module 'account_payment_order'---
+---Fields in module 'account_payment_order'---
+account_payment_order / account.journal          / inbound_payment_order_only (boolean): DEL
+account_payment_order / account.journal          / outbound_payment_order_only (boolean): DEL
+account_payment_order / account.payment.order    / failed_message_ids (one2many) : DEL relation: mail.message
+---XML records in module 'account_payment_order'---
+DEL ir.ui.view: account_payment_order.view_move_line_form_no_edit

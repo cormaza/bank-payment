@@ -1,0 +1,4 @@
+---Models in module 'account_payment_mode'---
+---Fields in module 'account_payment_mode'---
+---XML records in module 'account_payment_mode'---
+---nothing has changed in this module--
