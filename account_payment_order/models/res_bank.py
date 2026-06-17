@@ -11,7 +11,7 @@ class ResBank(models.Model):
     @api.constrains("bic")
     def check_bic_length(self):
         for bank in self:
-            if bank.bic and len(bank.bic) not in (8, 11):
+            if bank.bic and len(bank.bic) not in (8, 11) and not bank.bic.isdigit():
                 raise ValidationError(
                     _(
                         "A valid BIC contains 8 or 11 characters. The BIC '%(bic)s' "
