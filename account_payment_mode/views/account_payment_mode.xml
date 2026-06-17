@@ -76,7 +76,7 @@
                     string="Outbound"
                     domain="[('payment_type', '=', 'outbound')]"
                 />
-                <group string="Group By" name="groupby">
+                <group name="groupby">
                     <filter
                         string="Payment Method"
                         name="payment_method_groupby"
